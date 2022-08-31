@@ -1,0 +1,147 @@
+.fighter-background {
+  padding-top: 150px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-position: right 50px top 50px;
+  background-image: url('../assets/265019.jpg');
+  animation: fadeIn;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  width: fit-content;
+  max-width: 18vw;
+  display: flex;
+  text-align: justify;
+  display: flex;
+  align-items: flex-end;
+  z-index: 15;
+}
+
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  min-height: 100%;
+  padding-bottom: 20px;
+  min-width: 750px;
+  background-color: rgba(201, 201, 201, 0.781);
+  position: relative;
+}
+
+.notification {
+  position: fixed;
+  bottom: 10px;
+  z-index: 10;
+}
+
+.page-title {
+  padding: 30px;
+  font-weight: 500;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-text {
+  width: auto;
+  float: right;
+}
+.link-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+}
+.link-button {
+  text-decoration: none;
+  color: white;
+  padding: 0 3px;
+}
+
+.logo > h1 {
+  font-size: 5rem;
+}
+
+.icon-box {
+  position: relative;
+  right: 100px;
+  bottom: 15px;
+}
+.icon {
+  width: 5rem;
+  height: auto;
+  background-color: white;
+}
+
+.footer-text {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 900px) {
+  .fighter-background {
+    background-position: right -450px top 50px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .page-container {
+    min-width: 100vw;
+  }
+  .page-title {
+    font-size: 2em;
+  }
+  
+  .logo > h1 {
+    font-size: 3rem;
+  }
+  .icon {
+    width: 3rem;
+  }
+
+  .icon-box {
+    right: 50px;
+    bottom: 15px;
+  }
+
+  .footer-text {
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+  }
+  
+  .fighter-background {
+    background-position: right -720px top 50px;
+  }
+
+   
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
